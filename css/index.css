@@ -1,0 +1,323 @@
+
+     ul.menuContent {
+        margin-left: 250px;
+    }
+   .menuContent li {
+      display: inline-block;
+         /* color: #2d3235; */
+      transition: opacity 0.3s ease 0.3s;
+      cursor: pointer;
+      position: relative;
+      margin: 0 20px;
+     
+      
+    }
+      .menuContent  li a:link {
+      color: #2d3235;
+      font-size: 16px;
+    }
+    .menuContent  li a:visited {
+      color: #2d3235;
+    }
+   
+   .menuContent  li a {
+      text-decoration:none;
+    }
+   .menuContent li a:hover { 
+       background-color: #fff !important ;
+   }
+     .menuContent  li a:hover:before {
+      opacity: 0.8;
+      top: 13px;
+      left: 20px;
+    }
+     .menuContent  li a:hover:after {
+      opacity: 0.8;
+      bottom: 13px;
+      left: -20px;
+    }
+     .menuContent  li a:before,  .menuContent  li a:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: #ccc;
+      transition: all 0.3s ease;
+    }
+   .menuContent  li a:before {
+      transform: rotate(-55deg);
+      left: 60px;
+      top: -30px;
+      opacity: 0;
+      right: 0;
+      margin: auto;
+    }
+   .menuContent  li a:after {
+      transform: rotate(-55deg);
+      left: -60px;
+      bottom: -30px;
+      opacity: 0;
+      right: 0;
+      margin: auto;
+    }
+      
+    div#slider {
+        height: 250px;
+    }
+
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       /* background: rgba(41,58,76,0.4); */
+       background-color: rgba(0, 183, 255,1);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+         width:100%;
+        height:250px;
+          position: relative;
+          
+          user-select: none;
+          
+       }
+    
+       .slider   span {
+          text-align: center; 
+         font-size:2.5em;
+         color:  #ff0;
+         width: 80%;
+         font-weight: bolder;
+         margin-bottom: 20px;
+         
+     }
+  .about-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-right: -30px;
+}
+.about-row {
+  /* background-color: #DFDBE5; */
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+  .about-contant {
+      height: 300px !important;
+  }
+  .center-align .card-content {
+    padding: 10px !important;
+  }
+  .center-align .card-content .card-title   {
+    margin: 8px !important;
+    font-size: 1.6em;
+  }
+@media only screen and (min-width: 570px) {
+    .flow-text {
+     font-size:1.25rem
+    }
+    
+   }
+   @media only screen and (max-width: 425px) {
+    .about-row .card-content  {
+        padding: 16px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+       }
+       .profile-card-social {
+           margin-top:15px !important;
+       }
+       .card-title {
+        font-size: 1.5em !important;
+        text-align: center;
+       }
+       .about-tagline {
+        font-size: 0.96em;
+        text-align: center;
+       }
+   }
+   @media only screen and (min-width: 765px) and (max-width:1000px) { 
+     .profile-card-social{
+       margin-top: 18px !important;
+     }
+   }
+   .profile-card-social {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .profile-card-social__item {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #405de6;
+    box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+    position: relative;
+    font-size: 21px;
+    flex-shrink: 0;
+    transition: all .3s;
+  }
+  @media screen and (max-width: 768px) {
+    .profile-card-social__item {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
+    .projects-item {
+    margin-top: 18px;
+    }
+    .projects-item:first-child {
+      margin-top: 8px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .profile-card-social__item:hover {
+      transform: scale(1.2);
+    }
+  }
+  .profile-card-social__item.facebook {
+    background: linear-gradient(45deg, #3b5998, #0078d7);
+    box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+  }
+  .profile-card-social__item.twitter {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+  }
+  .profile-card-social__item.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+  }
+  
+  .profile-card-social__item.github {
+    background: linear-gradient(45deg, #333333, #626b73);
+    box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+  }
+  .profile-card-social__item.codepen {
+    background: linear-gradient(45deg, #324e63, #414447);
+    box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
+  }
+  .profile-card-social__item.link {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+  }
+  .profile-card-social .icon-font {
+    display: inline-flex;
+  }
+  #tools {
+    width: 100%;
+    height: 350px;
+    background: transparent;
+    transition: background 0.5s ease-in;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  }
+  /* #tools h4 {
+    position: absolute;
+    top: -8px;
+    font-size: 1.2em;
+    background:#659ebc;
+    padding: 15px 47px;
+    border-radius: 39px;
+    line-height: 1.2em;
+    color:white;
+    font-weight: inherit;
+  } */
+
+.nav {
+          padding: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+           }
+   ul {
+          list-style: none;
+         
+     }
+     .nav  li {
+        outline: none;
+        border:0px;
+      }
+.nav  li  {
+      padding: 35px;
+      float: left;
+      width :135px;
+      text-align: center;
+      font-size: 22px;
+     color: white;
+       text-decoration: none ;
+      }
+          li i {
+          height: 50px;
+      }
+       .nav li:first-child {
+          background: #fc490b;
+          margin:  0 -1px;
+      }
+      .nav li:nth-child(2) {
+          background: #2196f3 !important ;
+          margin:  0 -1px;
+      }
+      .nav li:nth-child(3) {
+          background: #ffd93b !important;
+          margin:  0 -1px;
+      }
+      .nav li:nth-child(4) {
+          background: #61dafb ;
+          margin:  0 -1px;
+      }
+   
+      /* @keyframes illuminate {
+          0% {
+              transform: scale(0.7, 0.7);
+              opacity: 0.7;
+          }
+          50% {
+            
+              opacity: 0.3;
+          }
+         100% {
+              transform: scale(1.15);
+              opacity: 0;
+          }
+      }  */
+
+    
+      @media screen and (min-width: 395px) and (max-width:580px){
+       .nav {
+         max-width: 380px;
+       }
+        }
+        @media screen and (max-width: 380px) {
+          .side-nav {
+            width: calc(100% - 95px) !important;
+          }
+        }
+        
+      /*Tools ends */
+    .projects-item .card-image img {
+      height: 250px;
+    }
+    .projects-item .item-img {
+      object-fit: cover;
+    }
+    /* .projects-item .card-reveal  {
+      display: flex ;
+      flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+    } */
